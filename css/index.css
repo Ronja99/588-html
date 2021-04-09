@@ -1,44 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 :root {
-    font-family: "Anton", sans-serif;
-    --main-color: rgba(44, 143, 143);
-    --accent-color: cadetblue;
-
+    font-family: 'DotGothic16', sans-serif;
+    --main-color: black;
+    --accent-color: rgb(50, 206, 211);
+    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
+    /* border: 1px solid black; */
+} 
+
+body {
+    max-width: 980px;
+    margin: auto;
 }
 
-.logo {
-    color: var(--main-color);
-    font-size: 48px;
+
+header nav .logo,
+header .banner h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-img {
-    max-width: 400px;
+#burger-checkbox {
+    display: none;
 }
 
-#home {
-    margin-top: 100px;
+header .menu {
+    display: none;
 }
 
-header#home {
-    margin-top: 10px;
+header .menu a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black    ;
 }
 
-article.product p {
-    font-family: "Anton", sans-serif;
-    
+header .menu a:hover {
+    font-weight: bold;
 }
 
-p:hover {
-    text-decoration: underline;
+@media (min-width: 480px) {
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
 }
 
-p::first-letter {
-    font-size: 24px;
-    color: var(--main-color);
+header .banner {
+    background-image: url(../img/baby-yoda.svg);
+    background-size: cover;
+    min-height: 400px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+header .banner h1 {
+    color: var(--accent-color);
+}
+
+.product-list .product {
+    border: 1px solid var(--main-color);
+    padding: 5px;
+}
+
+.product-list .product img {
+    display: block;
+    width: 100px;
+}
+
+.product-list .product .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 440px) {
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+} 
+
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.contact-form-label {
+    min-width: 100px;
+    display: inline-block;
+}
+
+
+
+/* controls */
+
