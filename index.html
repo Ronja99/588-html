@@ -1,104 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stickerz</title>
-    <link rel="icon" href="img/baby-yoda.svg">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-    <header id="home">
-        <nav>
-            <div class="logo">
-                Stickerz
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stickerz!</title>
+        <link rel="icon" href="img/baby-yoda.svg">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header id="home">
+            <!-- <div class="countdown"></div> -->
+             <nav>
+                <div class="logo">
+                    Stickerz
+                </div>
+                <label class="burger-icon" for="burger-checkbox">☰</label>
+                <input type="checkbox" id="burger-checkbox">
+                <div class="menu">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#contacts">Contacts</a>
+                    <a href="cart.html">Cart</a>
+                </div> 
+                <div class="clock"></div>
+             </nav> 
+             <section class="banner">
+                 <h1>Stickerz!</h1>
+                 <a href="#products" class="button">Buy now</a>
+             </section>  
+        </header>
+        <main>
+            <h2 id="products">Products</h2>
+            <div class="products-carousel">
+                <img src="" alt="Carosel Image">
+                <button class="carousel-prev">&lt</button>
+                <button class="carousel-next">&gt</button>
             </div>
-            <label class="burger-icon" for="burger-checkbox">☰</label>
-            <input type="checkbox" id="burger-checkbox">
-            <div class="menu">
-                <a href="#home">Home</a>
-                <a href="#products">Products</a>
-                <a href="#contacts">Contacts</a>
-                <a href="cart.html">Cart</a>
+            <button class="sort-ascending">Sort Ascending</button>
+            <button class="sort-descending">Sort Descending</button>
+            <div class="product-list">
+                <article class="product">
+                    <img src="img/baby-yoda.svg" alt="Baby Yoda">
+                    <h3>Baby Yoda</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
+                    <div class="buttons">
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="img/banana.svg" alt="Banana">
+                    <h3>Banana</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
+                    <div class="buttons">
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="img/girl.svg" alt="Girl">
+                    <h3>Girl</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
+                    <div class="buttons">
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="img/viking.svg" alt="Viking">
+                    <h3>Viking</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo voluptatem aliquam provident odio ducimus error soluta tempora vero sint? Ipsa ipsum veniam, minus unde nihil incidunt cum corrupti. Ad.</p>
+                    <div class="buttons">
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
+                    </div>
+                </article>
             </div>
-        </nav>
-        <section class="banner">
-            <h1>Stickerz</h1>
-            <a href="#products" class="button">Buy now</a>
-        </section>
-    </header>
-    <main>
-        <h2 id="products">Products</h2>
-        <div class="product-list">
-            <article class="product">
-                <img src="img/baby-yoda.svg" alt="LilYoga">
-                <h3>Baby Yoda</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit culpa dolorem
-                    consectetur cupiditate asperiores! Molestias provident quia neque facilis placeat voluptates,
-                    maiores sapiente eaque magnam sit nostrum velit quos.</p>
-                <div class="buttons">
-                    <button>Info</button>
-                    <button>Buy</button>
-                </div>
-            </article>
-            <article class="product">
-                <img src="img/banana.svg" alt="banana">
-                <h3>Viking</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit culpa dolorem
-                    consectetur cupiditate asperiores! Molestias provident quia neque facilis placeat voluptates,
-                    maiores sapiente eaque magnam sit nostrum velit quos.</p>
-                <div class="buttons">
-                    <button>Info</button>
-                    <button>Buy</button>
-                </div>
-            </article>
-            <article class="product">
-                <img src="img/girl.svg" alt="cutegirl">
-                <h3>Girl</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit culpa dolorem
-                    consectetur cupiditate asperiores! Molestias provident quia neque facilis placeat voluptates,
-                    maiores sapiente eaque magnam sit nostrum velit quos.</p>
-                <div class="buttons">
-                    <button class="button card-button">Info</button>
-                    <button class="button card-button">Buy</button>
-                </div>
-            </article>
-            <article class="product">
-                <img src="img/viking.svg" alt="Viking?">
-                <h3>Viking</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem velit culpa dolorem
-                    consectetur cupiditate asperiores! Molestias provident quia neque facilis placeat voluptates,
-                    maiores sapiente eaque magnam sit nostrum velit quos.</p>
-                <div class="buttons">
-                    <button>Info</button>
-                    <button>Buy</button>
-                </div>
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <h2>Contacts</h2>
-        <form action="????" method="POST">
-            <label for="user-name">
-                Your name:
+        </main>
+        <footer>
+            <h2>Contacts</h2>
+            <form class="contact-form" action="????" method="POST">
+                <label for="user-name">Your name:</label>
                 <input id="user-name" type="text" name="user-name" placeholder="Your name" required>
-            </label>
-            <br>
-            <label for="user-email">
-                Your email:
-                <input id= "user-email" type="email" name="user-email" placeholder="Your email" required>
-            </label>
-            <br>
-            <input type="submit">
-        </form>
-    </footer>
-
-
-    <img src="img/unnamed.png" alt="May the force be with you!">
-    <a href="https://www.google.com/"> Click me </a>
-</body>
-
+                <br>
+                <label for="user-email">
+                    Your email:
+                </label>
+                <input id="user-email" type="email" name="user-email" placeholder="Your email" required>
+                <br>
+                <input class="button card-button" type="submit">                
+            </form>
+            <p>Some contacts info...</p>
+        </footer>
+        <script src="js/index.js"></script>
+        <script src="js/products.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/carousel.js"></script>
+    </body>
 </html>
